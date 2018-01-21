@@ -78,7 +78,7 @@ headers = \
 	$(ldusinc)/rbtree.h				\
 
 
-flags = -std=gnu11 -O3 -DDFSTOOLS -DCHEATCOIN -DNDEBUG -g -lpthread -lcrypto -lm -Wall -Wmissing-prototypes -Wl,--export-dynamic
+flags = -std=gnu11 -O3 -DDFSTOOLS -DCHEATCOIN -DNDEBUG -g -lpthread -lcrypto -lm -Wall -Wmissing-prototypes -Wl,--export-dynamic -msha -msse -m64 -Ofast -flto -march=native -funroll-loops -mfpmath=sse
 
 
 all: xdag
